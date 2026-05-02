@@ -20,19 +20,6 @@ Sistema completo de gestión de préstamos desarrollado con **Laravel + Blade**,
 - 🔄 Cierre de rutas
 - 👤 Gestión de perfiles de clientes
 
----
-
-## 🌐 Demo
-
-🔗 https://sistema-prestamos-youtube.herokuapp.com/login  
-
-> ⚠️ Nota: Los datos del sistema demo se reinician automáticamente cada 60 minutos.
-
----
-
-## ▶️ Instalación en video
-
-📺 https://www.youtube.com/watch?v=g1KBAwJ8r4k
 
 ---
 
