@@ -1,112 +1,178 @@
-## Sistema de préstamos
-#### Actualizado
+# 💰 Sistema de Préstamos — Laravel
 
-Sistema de préstamos con roles de usuarios, desarrollado en Laravel + Blade. Puede gestionar bóvedas, rutas de cobro, agentes, supervisores, cierres de ruta, histórico de pagos, estadística de agente, reporte de gastos, perfil de cliente, entre otras cosas.
+Sistema completo de gestión de préstamos desarrollado con **Laravel + Blade**, diseñado para administrar clientes, agentes, supervisores y operaciones financieras de forma eficiente.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/leifermendez/sistema-prestamos) <a href="https://www.buymeacoffee.com/leifermendez" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+---
 
-#### Video Instalación
-[Ver Video](https://www.youtube.com/watch?v=g1KBAwJ8r4k)
+## 🚀 Características principales
 
-#### Ver demo
-[DEMO](https://sistema-prestamos-youtube.herokuapp.com/login)
+- 🔐 Gestión de roles de usuario:
+  - Administrador
+  - Supervisor
+  - Agente
+  - Cliente
+- 💵 Administración de préstamos con intereses y cuotas
+- 🏦 Control de bóvedas y asignación de fondos
+- 📍 Rutas de cobro para agentes
+- 📊 Estadísticas por agente
+- 📈 Reportes financieros y de gastos
+- 📜 Historial de pagos
+- 🔄 Cierre de rutas
+- 👤 Gestión de perfiles de clientes
 
-> Los datos se borran automaticamente cada 60 minutos
+---
 
-#### ¿Que puedo hacer con este sistema?
+## 🌐 Demo
 
-Gestionar roles de usuarios:
-- Usuario
-- Agente
-- Supervisor
-- Admin
+🔗 https://sistema-prestamos-youtube.herokuapp.com/login  
 
-#### Usuario
-Hace referencia de una persona a quien se presta el dinero esta persona puede elegir entre N número de cuotas a pagar su préstamo con un % de interés.
+> ⚠️ Nota: Los datos del sistema demo se reinician automáticamente cada 60 minutos.
 
-#### Agente
-Será el encargado de buscar nuevos clientes, registrar pagos, realizar la ruta de cobro siempre bajo el mando de un supervisor
+---
 
-![](https://i.imgur.com/kbvwudQ.gif)
+## ▶️ Instalación en video
 
-#### Supervisor
-Tiene bajo su control una bóveda de cual posee un historial de transacciones con un monto base y a su vez puede asignar sub montos a los agentes los cuales deben realizar préstamos y cobros.
+📺 https://www.youtube.com/watch?v=g1KBAwJ8r4k
 
-![](https://i.imgur.com/DdkdJds.gif)
+---
 
-#### Admin
-Encargado de crear las bóvedas, supervisor y agente. Siempre tiene el control de todos los otros módulos
+## 🧑‍💼 Roles del sistema
 
-![](https://i.imgur.com/KAX76ui.gif)
+### 👤 Cliente
+Persona que solicita un préstamo y puede pagar en múltiples cuotas con interés definido.
 
-### Requerimientos
+---
+
+### 🚶 Agente
+Encargado de:
+- Captar clientes  
+- Registrar pagos  
+- Ejecutar rutas de cobro  
+
+---
+
+### 🧑‍💼 Supervisor
+Responsable de:
+- Gestionar una bóveda  
+- Asignar fondos a agentes  
+- Supervisar operaciones  
+
+---
+
+### 🛠️ Administrador
+Control total del sistema:
+- Crear usuarios  
+- Gestionar bóvedas  
+- Supervisar todos los módulos  
+
+---
+
+## 🧱 Tecnologías utilizadas
+
+- **Laravel**
+- **PHP**
+- **Blade**
+- **MySQL**
+- **Bootstrap**
+- **JavaScript**
+
+---
+
+## ⚙️ Requisitos
+
+
+- PHP >= 5.6.4
+- Composer
+- MySQL o MariaDB
+- Servidor local (XAMPP, Laragon, etc.)
+
+---
+
+## 🛠️ Instalación
+
+# Clonar repositorio
 ```
- "php": ">=5.6.4"
+git clone https://github.com/tu-usuario/sistema-prestamos.git
 ```
-
-### Instalación
-Ejecutar los siguientes comandos en orden
-```cmd
-git clone https://github.com/leifermendez/sistema-prestamos.git
+# Entrar al proyecto
 ```
-```cmd
 cd sistema-prestamos
 ```
-```cmd
+# Instalar dependencias
+```
 composer install
 ```
-Seguidamente recuerda que por seguridad el archivo <b>"<em>.env</em>"</b> no se copia, para ello dispones del mismo pero con el nombre
-<b>"<em>.env.example</em>"</b> el cual deberás renombrar a <b>"<em>.env</em>"</b> solamente.
-
-Recuerda también ingresar en el archivo <b>"<em>.env</b>"</em> los datos de conexión a la base de datos que deberas haber creado previamente, esto es importante para poder continuar con el siguiente paso y generar el <b>"<em>key</b>"</em>.
-```cmd
+# Configurar entorno
+```
+cp .env.example .env
+```
+# Generar clave
+```
 php artisan key:generate
 ```
-```cmd
-php artisan migrate:install
+# Migraciones
 ```
-```cmd
 php artisan migrate
 ```
-```cmd
+# Seeders
+```
 php artisan db:seed
-
-php artisan migrate:fresh --seed
-
+```
+# Ejecutar servidor
+```
 php artisan serve
 ```
 
-Optimiza el funcionamiento de las fechas estableciendo tu zona horaria [Ver zonas horarias](https://www.php.net/manual/es/timezones.php)
+---
 
-__config/app.php__
-```php
-    ....
-    'timezone' => 'Europe/Madrid',
-    ....
+## ⚙️ Configuración adicional
+
+### 🕒 Zona horaria
+
+Editar en:
 ```
+config/app.php
+'timezone' => 'America/Mexico_City',
+```
+---
 
-__NOTA:__ Recuerda para un optimo funcionamiento en modo PRODUCCION en el archivo `.env` establece
- los siguientes valores de esta manera se desactiva los logs.
+## 🚀 Producción
+
+En el archivo .env:
 ```
 APP_ENV=production
 APP_DEBUG=false
 ```
 
+---
 
-### Usurios
-Luego de correr con exito la migracion y los seeders, el sistema crea varios usuarios para comenzar a probar
+## 🔑 Usuarios de prueba
 
-__Rol__: `admin`
-__User__:`admin@admin.com`
-__Contraseña__:`12345678`
+Después de ejecutar migraciones y seeders:
 
+R| Rol        | Usuario                    | Contraseña |
+|------------|----------------------------|------------|
+| Admin      | admin@admin.com            | 12345678   |
+| Supervisor | supervisor@supervisor.com  | 12345678   |
+| Agente     | agente@agente.com          | 12345678   |
 
-__Rol__: `supervisor`
-__User__:`supervisor@supervisor.com`
-__Contraseña__:`12345678`
+---
 
+## 🤝 Contribuciones
 
-__Rol__: `agente`
-__User__:`agente@agente.com`
-__Contraseña__:`12345678`
+- Haz un fork del repositorio
+- Crea una rama (feature/nueva-funcionalidad)
+- Realiza tus cambios
+- Envía un Pull Request
 
+---
+
+## 👨‍💻 Autor
+
+**Isai Reyes**
+
+---
+
+## 📄 Licencia
+
+Licence Mit
