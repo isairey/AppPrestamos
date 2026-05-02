@@ -92,11 +92,11 @@ Control total del sistema:
 
 # Clonar repositorio
 ```
-git clone https://github.com/tu-usuario/sistema-prestamos.git
+git clone https://github.com/isairey/AppPrestamo.git
 ```
 # Entrar al proyecto
 ```
-cd sistema-prestamos
+cd AppPrestamo
 ```
 # Instalar dependencias
 ```
@@ -175,4 +175,4 @@ R| Rol        | Usuario                    | Contraseña |
 
 ## 📄 Licencia
 
-Licence Mit
+Licence MIT.
