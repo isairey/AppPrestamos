@@ -1,21 +1,64 @@
-# Security Policy
+# 🔐 Política de Seguridad
 
-## Supported Versions
+## 📌 Versiones soportadas
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+A continuación se indican las versiones del proyecto que actualmente reciben actualizaciones de seguridad:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Versión | Soporte |
+|---------|---------|
+| 5.1.x   | ✅ Soportada |
+| 5.0.x   | ❌ No soportada |
+| 4.0.x   | ✅ Soportada |
+| < 4.0   | ❌ No soportada |
 
-## Reporting a Vulnerability
+---
 
-Use this section to tell people how to report a vulnerability.
+## 🚨 Reportar una vulnerabilidad
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Si detectas una vulnerabilidad de seguridad en este proyecto, por favor repórtala de manera responsable.
+
+### 📩 Cómo reportar
+
+Envía un correo con la siguiente información:
+
+- Descripción detallada de la vulnerabilidad  
+- Pasos para reproducir el problema  
+- Posible impacto  
+- Evidencia (capturas, logs, etc.)  
+
+---
+
+### ⏱️ Tiempo de respuesta
+
+- 📬 Confirmación de recepción: **24 - 72 horas**  
+- 🔍 Análisis del reporte: **3 - 7 días hábiles**  
+- 🛠️ Solución (si aplica): según la complejidad del problema  
+
+---
+
+### 📢 Proceso
+
+- Si la vulnerabilidad es válida, se trabajará en una solución lo antes posible  
+- Se notificará al reportante sobre el progreso  
+- Se publicará un parche o actualización de seguridad  
+- Si no es válida, se proporcionará una explicación  
+
+---
+
+## ⚠️ Recomendaciones
+
+- No divulgar vulnerabilidades públicamente antes de que sean corregidas  
+- Mantener siempre el sistema actualizado  
+- Utilizar entornos seguros para pruebas  
+
+---
+
+## 👨‍💻 Responsable
+
+**Isai Reyes**
+
+---
+
+## 📄 Nota
+
+Esta política aplica a todas las versiones soportadas del proyecto.
